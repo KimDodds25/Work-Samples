@@ -1,0 +1,9 @@
+This program implements a multivariate bernoulli naive bayes document classifier.
+Training and test data takes the form: gold_class f1:count f2:count f3:count ... fn:count
+To run the program: ./build_NB1.sh train_file test_file class_delta conditional_delta model_output system_output > accuracy_output
+
+class_delta: the smoothing variable for the class prior class probability
+conditional_delta: the smoothing variable for the conditional probability P(f|c)
+
+The result files in the folder are run on the following command line:
+./build_NB1.sh train.vectors.txt test.vectors.txt 0 0.5 model sys_output > acc_file
