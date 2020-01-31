@@ -1,0 +1,21 @@
+-5.120530499586042
+CONFUSION MATRIX FOR TRAINING DATA:
+Rows are gold, columns are system output.
+
+                       talk.politics.guns  talk.politics.mideast  talk.politics.misc
+talk.politics.guns                  883.0                    1.0                16.0
+talk.politics.mideast                 6.0                  862.0                32.0
+talk.politics.misc                   44.0                   34.0               822.0
+
+Training accuracy: 0.9507407407407408
+
+
+CONFUSION MATRIX FOR TEST DATA:
+Rows are gold, columns are system output.
+
+                       talk.politics.guns  talk.politics.mideast  talk.politics.misc
+talk.politics.guns                   94.0                    0.0                 6.0
+talk.politics.mideast                 0.0                   99.0                 1.0
+talk.politics.misc                   16.0                    5.0                79.0
+
+Test accuracy: 0.9066666666666666
