@@ -6,7 +6,7 @@ Test data and instructions on how to run code are included in the folder for eac
 
 LING 570: Shallow Processing for NLP
 LING 571: Deep Processing for NLP
-  - CKY parser
+    CKY parser
 LING 572: Advanced Statistical Methods for NLP
-  - Multivariate Bernoulli Naive Bayes document classifier
-  - Multinomial Naive Bayes document classifier
+    Multivariate Bernoulli Naive Bayes document classifier
+    Multinomial Naive Bayes document classifier
