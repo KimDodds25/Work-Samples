@@ -1,3 +1,4 @@
 This folder contains the implementation of a CKY parser. The parser uses a context free grammar to parse English sentences taken from a portion of the ATIS corpus.
 
+To run the parser:
 ./hw3_parser.sh cfg_grammar test_sentences output_file
