@@ -1,0 +1,66 @@
+Scientists rescued a mouse immune system.
+(TOP ('Scientists'/NP) (VP ('rescued'/VBD) (NP ('a'/Det) (Nom ('mouse'/Nom) (Nom ('immune'/ADJP) ('system'/Nom))))))
+Number of parses:1
+
+Will this work in humans?
+Number of parses:0
+
+They published their research today online.
+(TOP ('They'/NP) (VP (VP (VP ('published'/VBD) (NP ('their'/PossPro) ('research'/Nom))) ('today'/ADVP)) ('online'/ADVP)))
+(TOP ('They'/NP) (VP (VP ('published'/VBD) (NP ('their'/PossPro) ('research'/Nom))) (ADVP ('today'/Adv) ('online'/ADVP))))
+Number of parses:2
+
+The immune response is alerted by dendritic cells.
+(TOP (NP ('The'/Det) (Nom ('immune'/ADJP) ('response'/Nom))) (VP ('is'/AUX) (VP ('alerted'/VBN) (PP ('by'/Prep) (NP ('dendritic'/ADJP) ('cells'/Nom))))))
+Number of parses:1
+
+They capture infected cells and display fragments of the pathogen.
+(TOP ('They'/NP) (VP (VP ('capture'/VBP) (NP ('infected'/ADJP) ('cells'/Nom))) (_X_3 ('and'/Conj) (VP ('display'/VBP) (NP ('fragments'/Nom) (PP ('of'/Prep) (NP ('the'/Det) ('pathogen'/Nom))))))))
+Number of parses:1
+
+Dr Jose Villadangos is a researcher of the immune system.
+(TOP (NP (Nom ('Dr'/Nom) ('Jose'/Nom)) ('Villadangos'/Nom)) (VP ('is'/VBZ) (NP ('a'/Det) (Nom ('researcher'/Nom) (PP ('of'/Prep) (NP ('the'/Det) (Nom ('immune'/ADJP) ('system'/Nom))))))))
+(TOP (NP ('Dr'/Nom) (Nom ('Jose'/Nom) ('Villadangos'/Nom))) (VP ('is'/VBZ) (NP ('a'/Det) (Nom ('researcher'/Nom) (PP ('of'/Prep) (NP ('the'/Det) (Nom ('immune'/ADJP) ('system'/Nom))))))))
+Number of parses:2
+
+Systemic infections overstimulate dendritic cells. 
+(TOP (NP ('Systemic'/ADJP) ('infections'/Nom)) (VP ('overstimulate'/VBP) (NP ('dendritic'/ADJP) ('cells'/Nom))))
+Number of parses:1
+
+A new type of vaccine?
+Number of parses:0
+
+They injected them with a live vaccine.
+(TOP ('They'/NP) (VP ('injected'/VBD) (_X_7 ('them'/NP) (PP ('with'/Prep) (NP ('a'/Det) (Nom ('live'/ADJP) ('vaccine'/Nom)))))))
+Number of parses:1
+
+The vaccine was made of dendritic cells.
+(TOP (NP ('The'/Det) ('vaccine'/Nom)) (VP ('was'/AUX) (VP ('made'/VBN) (PP ('of'/Prep) (NP ('dendritic'/ADJP) ('cells'/Nom))))))
+Number of parses:1
+
+They restored immunity in mice with a weak immune system.
+(TOP ('They'/NP) (VP ('restored'/VBD) (_X_7 (NP ('immunity'/Nom) (PP ('in'/Prep) ('mice'/NP))) (PP ('with'/Prep) (NP ('a'/Det) (Nom (ADJP ('weak'/Adj) ('immune'/ADJP)) ('system'/Nom)))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (_X_7 (NP ('immunity'/Nom) (PP ('in'/Prep) ('mice'/NP))) (PP ('with'/Prep) (NP ('a'/Det) (Nom ('weak'/ADJP) (Nom ('immune'/ADJP) ('system'/Nom))))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (NP (Nom ('immunity'/Nom) (PP ('in'/Prep) ('mice'/NP))) (PP ('with'/Prep) (NP ('a'/Det) (Nom (ADJP ('weak'/Adj) ('immune'/ADJP)) ('system'/Nom)))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (NP (Nom ('immunity'/Nom) (PP ('in'/Prep) ('mice'/NP))) (PP ('with'/Prep) (NP ('a'/Det) (Nom ('weak'/ADJP) (Nom ('immune'/ADJP) ('system'/Nom))))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (_X_7 ('immunity'/NP) (PP ('in'/Prep) (NP ('mice'/Nom) (PP ('with'/Prep) (NP ('a'/Det) (Nom (ADJP ('weak'/Adj) ('immune'/ADJP)) ('system'/Nom)))))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (_X_7 ('immunity'/NP) (PP ('in'/Prep) (NP ('mice'/Nom) (PP ('with'/Prep) (NP ('a'/Det) (Nom ('weak'/ADJP) (Nom ('immune'/ADJP) ('system'/Nom))))))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (NP ('immunity'/Nom) (PP ('in'/Prep) (NP ('mice'/Nom) (PP ('with'/Prep) (NP ('a'/Det) (Nom (ADJP ('weak'/Adj) ('immune'/ADJP)) ('system'/Nom)))))))))
+(TOP ('They'/NP) (VP ('restored'/VBD) (NP ('immunity'/Nom) (PP ('in'/Prep) (NP ('mice'/Nom) (PP ('with'/Prep) (NP ('a'/Det) (Nom ('weak'/ADJP) (Nom ('immune'/ADJP) ('system'/Nom))))))))))
+Number of parses:8
+
+Their immune system was compromised by sepsis.
+(TOP (NP ('Their'/PossPro) (Nom ('immune'/ADJP) ('system'/Nom))) (VP ('was'/AUX) (VP ('compromised'/VBN) (PP ('by'/Prep) ('sepsis'/NP)))))
+Number of parses:1
+
+In the case of infections, cells alert the immune system.
+Number of parses:0
+
+The immune system shuts down.
+(TOP (NP ('The'/Det) (Nom ('immune'/ADJP) ('system'/Nom))) (VP ('shuts'/VBZ) ('down'/RP)))
+Number of parses:1
+
+Scientists have discovered that malaria invades the whole body.
+(TOP ('Scientists'/NP) (VP ('have'/AUX) (VP ('discovered'/VBN) (SBAR ('that'/_X_2) (S ('malaria'/NP) (VP ('invades'/VBZ) (NP ('the'/Det) (Nom ('whole'/ADJP) ('body'/Nom)))))))))
+Number of parses:1
+
