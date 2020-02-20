@@ -10,6 +10,8 @@ LING 571: Deep Processing for NLP:
 
     - CKY parser (baseline and probabilistic)
     
+    - Semantic Feature Grammar
+    
 LING 572: Advanced Statistical Methods for NLP
 
     - Multivariate Bernoulli Naive Bayes document classifier
