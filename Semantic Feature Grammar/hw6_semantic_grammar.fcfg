@@ -1,0 +1,64 @@
+#########################
+#  SYNTACTIC PRODUCTIONS
+#########################
+%start S
+
+S[NUM=?n, SEM=<?subj(?vp)>] -> NP[NUM=?n, SEM=?subj] VP[NUM=?n, SEM=?vp]
+
+NBAR[NUM=?n, SEM=?nom] -> PropN[NUM=?n, SEM=?nom]
+NBAR[NUM=?n, SEM=?nom] -> ProN[NUM=?n, SEM=?nom]
+NBAR[NUM=?n, SEM=<?nom>] -> N[NUM=?n, SEM=?nom]
+NBAR[NUM=?n, SEM=<?coor(?n1,?n2)>] -> NBAR[NUM=?n, SEM=?n1] COOR[SEM=?coor] NBAR[NUM=?n, SEM=?n2]
+NP[NUM=?n, SEM=?nom] -> NBAR[NUM=?n, SEM=?nom]
+NP[NUM=?n, SEM=<?det(?nom)>] -> Det[NUM=?n, SEM=?det] NBAR[NUM=?n, SEM=?nom]
+
+VBAR[NUM=?n, SEM=?v] -> IV[NUM=?n, SEM=?v]
+VBAR[NUM=?n, SEM=<?v(?obj)>] -> TV[NUM=?n, SEM=?v] NP[NUM=?n, SEM=?obj]
+VBAR[NUM=?n, SEM=<?neg(?v)>] -> NEG[SEM=?neg] VBAR[NUM=?n, SEM=?v]
+VP[NUM=?n, SEM=?vbar] -> VBAR[NUM=?n, SEM=?vbar]
+VP[NUM=?n, SEM=<?coor(?v1,?v2)>] -> VBAR[NUM=?n, SEM=?v1] COOR[SEM=?coor] VBAR[NUM=?n, SEM=?v2]
+VP[NUM=?n, SEM=<?v>] -> AUX[NUM=?n] VP[NUM=pl, SEM=?v]
+
+#########################
+#  LEXICAL PRODUCTIONS
+#########################
+
+Det[NUM=sg, SEM=<\P.\Q.exists x.(P(x) & Q(x))>] -> 'a' | 'an'
+Det[NUM=sg, SEM=<\P.\Q.all x.(P(x) -> Q(x))>] -> 'every'
+Det[NUM=pl, SEM=<\P.\Q.all x.(P(x) -> Q(x))>] -> 'all'
+Det[SEM=<\P.\Q.all x.(P(x) -> -Q(x))>] -> 'no'
+
+PropN[NUM=sg, SEM=<\P.P(Mary)>] -> 'Mary'
+PropN[NUM=sg, SEM=<\P.P(John)>] -> 'John'
+PropN[NUM=sg, SEM=<\P.P(Jack)>] -> 'Jack'
+
+ProN[NUM=sg, SEM=<\P.all x.(person(x) -> -(P(x)))>] -> 'nobody'
+
+N[NUM=sg, SEM=<\x.student(x)>] -> 'student'
+N[NUM=pl, SEM=<\x.student(x)>] -> 'students'
+N[NUM=sg, SEM=<\x.bagel(x)>] -> 'bagel'
+N[NUM=sg, SEM=<\x.person(x)>] -> 'person'
+N[NUM=sg, SEM=<\x.essay(x)>] -> 'essay'
+N[NUM=sg, SEM=<\x.soda(x)>] -> 'soda'
+N[NUM=sg, SEM=<\x.sandwich(x)>] -> 'sandwich'
+
+
+IV[NUM=sg, SEM=<\x.exists e.(Eat(e) & Eater(e,x))>] -> 'eats'
+IV[NUM=pl, SEM=<\x.exists e.(Eat(e) & Eater(e,x))>] -> 'eat'
+IV[NUM=sg, SEM=<\x.exists e.(Drink(e) & Drinker(e,x))>] -> 'drinks'
+IV[NUM=pl, SEM=<\x.exists e.(Drink(e) & Drinker(e,x))>] -> 'drink'
+IV[NUM=sg, SEM=<\x.exists e.(Write(e) & Writer(e,x))>] -> 'writes'
+IV[NUM=pl, SEM=<\x.exists e.(Write(e) & Writer(e,x))>] -> 'write'
+
+TV[NUM=sg, SEM=<\W.\y.W(\x.exists e.(Eat(e) & Eater(e,y) & Eaten(e,x)))>] -> 'eats'
+TV[NUM=pl, SEM=<\W.\y.W(\x.exists e.(Eat(e) & Eater(e,y) & Eaten(e,x)))>] -> 'eat'
+TV[NUM=sg, SEM=<\W.\y.W(\x.exists e.(Drink(e) & Drinker(e,y) & Drunk(e,x)))>] -> 'drinks'
+TV[NUM=pl, SEM=<\W.\y.W(\x.exists e.(Drink(e) & Drinker(e,y) & Drunk(e,x)))>] -> 'drink'
+TV[NUM=sg, SEM=<\W.\y.W(\x.exists e.(Write(e) & Writer(e,y) & Written(e,x)))>] -> 'writes'
+TV[NUM=pl, SEM=<\W.\y.W(\x.exists e.(Write(e) & Writer(e,y) & Written(e,x)))>] -> 'write'
+
+COOR[SEM=<\P.\Q.\x.(P(x) | Q(x))>] -> 'or'
+IN -> 'not' | 'no'
+
+AUX[NUM=sg] -> 'does'
+NEG[SEM=<\P.\x(-P(x))>] -> 'not'
