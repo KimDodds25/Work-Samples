@@ -19,3 +19,7 @@ LING 572: Advanced Statistical Methods for NLP
     - Multinomial Naive Bayes document classifier
     
     - kNN document classifier
+    
+Personal Projects
+
+    - Voiceflow chat bot
