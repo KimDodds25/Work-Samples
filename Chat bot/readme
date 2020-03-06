@@ -1,0 +1,11 @@
+As a bit of a side project, and a gentle introduction to dialogue systems, I decided to experiment with making a chat bot using VoiceFlow. If you would like to try interacting with my chatbot, you can follow this link to the voicebox demo:
+https://creator.voiceflow.com/demo/3569311028185709 
+The chatbot can answer simple questions about myself such as:
+  - Can you tell me more about yourself?
+  - Where are you from?
+  - Why are you passionate about NLP?
+  
+If you would like to see more of the inner workings of the chatbot, you can download the voiceflow project with this link: https://creator.voiceflow.com/dashboard?import=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0SWQiOjk5MzY5LCJwcm9qZWN0TmFtZSI6IktpbURvZGRzX0NoYXRCb3QiLCJpYXQiOjE1ODM0NTM4NzN9.cCKFmZPyhHEUwv1Nh3WtZxauDy5bkLl4YUDvrBi2xzM
+
+You may notice a few wacky things with the voiceflow demo. Namely, voiceflow does not use machine learning to approximate questions that it hasn't seen before. As such, you must use the exact wording as one of the train questions in order to elicit the correct response. Second, it doesn't show images in the demo, so you can't see a picture of my adorable dog :(
+If you would like to test out the full version of the chat bot, I have an alpha version in Dialogflow that can be used with Google Assistant. Feel free to request access to this version if you're interested. 
