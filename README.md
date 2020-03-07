@@ -27,6 +27,8 @@ LING 572: Advanced Statistical Methods for NLP
     
     - kNN document classifier
     
+    - Support Vector Machine decoder
+    
 Personal Projects
 
     - Voiceflow chat bot
