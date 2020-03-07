@@ -5,6 +5,9 @@ This repository contains a small collection of projects that I have worked on in
 Test data and instructions on how to run code are included in the folder for each project.
 
 
+LING 566: Syntax for Computational Linguistics
+
+    - Example of HPSG feature structures and syntax trees
 
 LING 571: Deep Processing for NLP:
 
