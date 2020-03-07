@@ -8,6 +8,10 @@ Test data and instructions on how to run code are included in the folder for eac
 LING 566: Syntax for Computational Linguistics
 
     - Example of HPSG feature structures and syntax trees
+    
+LING 570: Shallow Processing for NLP:
+
+    - N-gram langauge model
 
 LING 571: Deep Processing for NLP:
 
