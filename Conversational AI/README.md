@@ -1,4 +1,5 @@
 # Work on Conversational AI/Chat Bots
+## Try out my bot [here](m.me/103266051434683)!
 ## Experience
 Starting in April 2020, I started working as an NLP Intern at a Seattle startup called Seasalt.AI. I finished my internship in September, and am presently still working at Seasalt part-time. Seasalt is a Conversational AI and Speech tech company. I was hired to create their first demo bot that they could show to potential business customers. Through working on this project I got to work hands-on with Rasa Open Source and Kubernetes. In addition to gaining a deep understanding of Rasa (and getting a certification), I also build on top of Rasa and developed my own dialogue management policy and cart backend for e-commerce bots. 
 
